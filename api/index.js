@@ -1,11 +1,11 @@
 const express = require("express");
 const app = express();
 
-const snacks = require("./snacks.json");
+const snacks = require("./api/snacks.json");
 
-const breakfast = require("./breakfast.json");
-const lunch = require("./lunch.json");
-const dinner = require("./dinner.json");
+const breakfast = require("./api/breakfast.json");
+const lunch = require("./api/lunch.json");
+const dinner = require("./api/dinner.json");
 
 app.get("/snacks",(req,res)=> {
     return res.json(snacks);
@@ -31,4 +31,4 @@ app.get("/meals/dinner",(req,res) => {
     return res.json(dinner);
 })
 
-app.listen(3000);
+module.exports = app;
