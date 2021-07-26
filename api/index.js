@@ -1,7 +1,6 @@
 const express = require("express");
 const app = express();
 
-const snacks = require("./api/snacks.json");
 
 const breakfast = require("./api/breakfast.json");
 const lunch = require("./api/lunch.json");
