@@ -1,9 +1,5 @@
-const express = require("express");
-const app = express();
-
 const snacks = require("./api/snacks.json");
 
-module.exports = app.get((req,res) => {
+module.exports = (req,res) => {
     return res.json(snacks);
-
-});
+};

@@ -6,9 +6,9 @@ const breakfast = require("./api/breakfast.json");
 const lunch = require("./api/lunch.json");
 const dinner = require("./api/dinner.json");
 
-app.get("/snacks",(req,res)=> {
-    return res.json(snacks);
-});
+// app.get("/snacks",(req,res)=> {
+//     return res.json(snacks);
+// });
 
 app.get("/meals",(req,res) => {
     return res.json({
