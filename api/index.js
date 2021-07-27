@@ -1,11 +1,8 @@
-
 const breakfast = require("./api/breakfast.json");
 const lunch = require("./api/lunch.json");
 const dinner = require("./api/dinner.json");
 
-// app.get("/snacks",(req,res)=> {
-//     return res.json(snacks);
-// });
+
 
 // app.get("/meals",(req,res) => {
 //     return res.json({
@@ -27,6 +24,10 @@ const dinner = require("./api/dinner.json");
 //     return res.json(dinner);
 // })
 
-module.exports = (req,res) => {
-    return res.json(snacks);
-}
+module.exports = async (req,res) => {
+    try {
+        res.json(breakfast);
+    } catch (err) {
+        res.send("ERROR");
+    }
+};
