@@ -1,6 +1,6 @@
-const breakfast = require("./breakfast/index");
-const lunch = require("./lunch/index");
-const dinner = require("./dinner/index")
+const breakfast = require("./breakfast/breakfast.json");
+const lunch = require("./lunch/lunch.json");
+const dinner = require("./dinner/dinner.json");
 
 module.exports = (req,res) => {
     res.json({breakfast,lunch,dinner});
