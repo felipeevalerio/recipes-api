@@ -1,6 +1,6 @@
-const breakfast = require("./api/breakfast.json");
-const lunch = require("./api/lunch.json");
-const dinner = require("./api/dinner.json");
+const breakfast = require("../breakfast.json");
+const lunch = require("../lunch.json");
+const dinner = require("../dinner.json");
 
 
 
@@ -24,10 +24,6 @@ const dinner = require("./api/dinner.json");
 //     return res.json(dinner);
 // })
 
-module.exports = async (req,res) => {
-    try {
-        res.json(breakfast);
-    } catch (err) {
-        res.send("ERROR");
-    }
+module.exports = (req,res) => {
+    res.json(breakfast);
 };
