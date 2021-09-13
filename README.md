@@ -1,6 +1,6 @@
 <p align="center">Uma API de receitas desenvolvida em Node.JS</p>
 <p align="center">
-  <img src="./Codigo/public/assets/readme-gif.gif" height="240px" width="480px" alt="Bart Gif"></img>
+  <img src="./homer.gif" height="240px" width="480px" alt="Bart Gif"></img>
 </p>
 
 ## 🌎 Links
